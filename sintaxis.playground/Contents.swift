@@ -49,8 +49,8 @@ var longitude: Double
     latitud = 36.166667
 
         //booleano
-    var stayOutTooLate: Bool
-    stayOutTooLate = true
+    var vivoEnElSemestre: Bool
+    vivoEnElSemestre = true
 
     var nothingInBrain: Bool
     nothingInBrain = true
@@ -62,7 +62,7 @@ var longitude: Double
     var apellido1: String = "Rodriguez"
 
     //Tipado inferido (el leguaje lo reconoce es preferido usar el anterior)
-    var age1 = 45
+    var edad1 = 45
     var longitude2 = -86.783333//siempre swift escojera double
     type(of:longitude2)
 
@@ -103,8 +103,8 @@ var longitude: Double
     nombre == "Pedro"
     nombre != "Pedro"
 
-    stayOutTooLate
-    !stayOutTooLate
+    vivoEnElSemestre
+    !vivoEnElSemestre
 
 //Interpolacion de cadenas
 
@@ -129,18 +129,12 @@ var longitude: Double
     var songs1: [Any] = ["Instant crush","Something about us",3]
     type(of:songs1)
 
-    var both1 = songs + songs
-    both1 += ["Everything has changed"]
+
+    songs += ["Everything has changed"]
 
     var songs3: [String] = []
 
     var songs4 = [String]()
-
-//diccionarios o hashes
-
-    var person = ["first":"Pedro","middle":"Antonio","last":"Vazquez","month":"Mayo","website":"pedrovazquezax"]
-    person["middle"]
-    person["month"]
 
 //condicionales
 
@@ -219,19 +213,6 @@ var longitude: Double
         print("You  just released Speak Now World Tour")
     default:
         print("Have you done something new?")
-    }
-
-    let studioAlbums = 5
-
-    switch studioAlbums {
-    case 0...1:
-        print("You`re just starting out")
-    case 2...3:
-        print("You`re a rising star")
-    case 4...5:
-        print("You`re world famus")
-    default:
-        print("have you done something new?")
     }
 
 //Funciones
